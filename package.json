@@ -13,5 +13,16 @@
     "url": "https://mahmudalam.com/"
   },
   "license": "ISC",
-  "description": "This is the backend application for the DKODE website, built with Node.js, Express.js, and MongoDB. It provides a secure RESTful API for managing website content, including blogs, images, and text files. The app features JWT-based authentication, bcrypt password hashing, and supports full CRUD operations for content management, ensuring secure user registration and login. [CREATED BY: Mahmud Alam - https://mahmudalam.com/]"
+  "description": "This is the backend application for the DKODE website, built with Node.js, Express.js, and MongoDB. It provides a secure RESTful API for managing website content, including blogs, images, and text files. The app features JWT-based authentication, bcrypt password hashing, and supports full CRUD operations for content management, ensuring secure user registration and login. [CREATED BY: Mahmud Alam - https://mahmudalam.com/]",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
