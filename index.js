@@ -8,15 +8,15 @@ const errorHandler = require("./middleware/errorHandler")
 
 const app = express();
 
+// Connect to MongoDB
+connectDB();
+
 // Middlewares
 app.use(cors());
 app.use(express.json());
 app.use('/api/users', userRoutes);
-app.use('api/blogs', blogRoutes);
+app.use('/api/blogs', blogRoutes);
 app.use(errorHandler);
-
-// Connect to MongoDB
-connectDB();
 
 // Server listen
 const port = process.env.PORT || 5000;
